@@ -74,7 +74,7 @@ app.get('/api/metrics', async (_req, res) => {
     res.status(500).json({ ok: false, error: e.message });
   }
 });
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+app.listen(PORT, () => console.log(`Listening on 0.0.0.0:${PORT}`));
 
 
 
